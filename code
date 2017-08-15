@@ -1,0 +1,21 @@
+
+
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Aug 15 20:01:59 2017
+
+@author: shimizu
+"""
+
+import urllib2
+
+
+url ="http://api.aoikujira.com/ip/ini"
+
+savename = "test.png"
+
+res = urllib2.urlopen(url)
+data = res.read()
+
+text = data.decode("utf-8")
+print(text)                             
